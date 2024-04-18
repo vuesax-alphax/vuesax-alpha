@@ -138,16 +138,24 @@ const route = useRoute()
 const pageData = usePageData()
 const pageFrontmatter = usePageFrontmatter<ThemeNormalApiFrontmatter>()
 
-const { copy } = useClipboard({ legacy: true })
+const { copied, copy } = useClipboard({ legacy: true })
+
+let tdElement: null | HTMLElement = null
 
 const handleCopy = (evt: MouseEvent, code: string) => {
-  copy(code)
-  const tdElement = evt.target as HTMLElement
-  tdElement.classList.add('copied')
-  setTimeout(() => {
+  if (tdElement) {
     tdElement.classList.remove('copied')
-  }, 1500)
+  }
+  copy(code)
+  tdElement = evt.target as HTMLElement
+  tdElement.classList.add('copied')
 }
+
+watch(copied, (newVal) => {
+  if (!newVal && tdElement) {
+    tdElement.classList.remove('copied')
+  }
+})
 
 const getTables = computed((): Tables => {
   return {
