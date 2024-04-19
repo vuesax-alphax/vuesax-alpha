@@ -239,6 +239,21 @@ onMounted(() => {
   })
 })
 
+const resetToggleCodeStatus = () => {
+  const toggleCodeBtnList = document.querySelectorAll(
+    '.btn-toggle-code'
+  ) as unknown as Array<HTMLElement>
+
+  toggleCodeBtnList.forEach((toggleBtn: HTMLElement) => {
+    const trParent = toggleBtn.closest('tr')
+    const nextCode = trParent?.nextElementSibling
+    if (nextCode && nextCode.classList.contains('open')) {
+      nextCode.classList.remove('open')
+    }
+    toggleBtn.classList?.remove('open-btn')
+  })
+}
+
 watch(
   () => route.path,
   () => {
@@ -248,6 +263,7 @@ watch(
     document
       .querySelector('.header-page .header__content')
       ?.classList.remove('con-table')
+    resetToggleCodeStatus()
   }
 )
 
