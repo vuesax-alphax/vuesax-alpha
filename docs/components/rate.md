@@ -88,7 +88,7 @@ PROPS:
       <vs-rate v-model="value" icons="[StarFilled, StarFilled, StarFilled]" />
     #__________________________________
   - name: void-icon
-    type: string
+    type: String
     values: 'string,Component'
     description: component of unselected icons.
     default: 'Star'
@@ -98,7 +98,7 @@ PROPS:
       <vs-rate v-model="value" void-icon="Star" />
     #__________________________________
   - name: disabled-void-icon
-    type: string
+    type: String
     values: 'string,Component'
     description: component of unselected read-only icons.
     default: 'StarFilled'
