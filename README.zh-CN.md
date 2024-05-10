@@ -1,4 +1,4 @@
-<h1 align="center">Vuesax Alpha - Vue.js 3 UI library</h1>
+<h1 align="center">Vuesax Alpha - Vue.js 3 UI 库</h1>
 
 <p align="center">
   <a href="https://www.npmjs.org/package/vuesax-alpha">
@@ -10,22 +10,22 @@
   <br>
 </p>
 
-- 💪 Vue 3 Composition API
-- 🔥 Written in TypeScript
+- 💪 Vue 3 组合式 API
+- 🔥 使用 TypeScript 编写
 
 <div align="center">
 
-English | [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
 </div>
 
-# Getting Started
+# 起步
 
-## Try with vuesax-next (vuesax v4)
+## 使用 vuesax-next (vuesax v4)
 
-About 90% of the api in this version works fine. This version references to [Vuesax documentaion](https://vuesax.com/)
+在这个版本 90% 的 api 都能正常使用. 详情参考 [Vuesax 文档](https://vuesax.com/)
 
-You can try with tag `old` from npm
+你也可以从 npm 上面使用带 `old` tag的 版本
 
 ```sh
 # Choose a package manager you like.
@@ -40,7 +40,7 @@ $ yarn add vuesax-alpha@old
 $ pnpm install vuesax-alpha@old
 ```
 
-And import it to use
+然后使用 import 导入
 
 ```js
 import { createApp } from 'vue'
@@ -53,11 +53,11 @@ import App from './App.vue'
 createApp(App).use(vuesax).mount('#app')
 ```
 
-Then, see the [vuesax-next doucmentation](https://vuesax.com/) to try it
+然后, 参考 [vuesax-next 文档](https://vuesax.com/) 去使用它
 
-## New version - Vuesax-alpha
+## 新版本 - Vuesax-alpha
 
-The documentation of this version is different from the above version, see the [VuesaxAlpha doucmentation](https://vuesax-alpha.vercel.app/)
+这个版本的文档和上面那些版本的完全不同，参考 [VuesaxAlpha 文档](https://vuesax-alpha.vercel.app/)
 
 ```sh
 # Choose a package manager you like.
@@ -72,9 +72,9 @@ $ yarn add vuesax-alpha
 $ pnpm install vuesax-alpha
 ```
 
-### Usage
+### 使用
 
-#### Full import
+#### 全部导入
 
 ```ts
 // main.ts
@@ -94,11 +94,11 @@ app.use(Vuesax)
 app.mount('#app')
 ```
 
-#### Dark theme
+#### 暗黑模式
 
-To enable it, you can create a switch to toggle `dark` class of html.
+想要使用暗黑模式，你可以创建一个开关来切换html的`dark`类。
 
-If you only need dark mode, just add dark class for html.
+如果你只需要黑色模式，在html上面添加一个dark类就可以了。
 
 ```html
 <html class="dark">
@@ -107,11 +107,12 @@ If you only need dark mode, just add dark class for html.
 </html>
 ```
 
-If you want to toggle it, i recommend [useDark | VueUse](https://vueuse.org/core/usedark/).
+如果你想要切换它，我推荐 [useDark | VueUse](https://vueuse.org/core/usedark/).
 
-#### Volar support
 
-If you use volar, please add the global component type definition to compilerOptions.types in tsconfig.json.
+#### Volar 支持
+
+如果你使用Volar，请将全局组件类型定义添加到tsconfig.json中的compilerOptions.types中。
 
 ```json
 // tsconfig.json
@@ -123,7 +124,7 @@ If you use volar, please add the global component type definition to compilerOpt
 }
 ```
 
-## Components vuesax-next vs vuesax-alpha
+## vuesax-next 与 vuesax-alpha 的组件比较
 
 - [x] Alert
 - [x] Avatar
@@ -163,17 +164,16 @@ If you use volar, please add the global component type definition to compilerOpt
 - [ ] Time picker
 - [x] Time select
 
-## Breaking change list
+## 破坏性改动
 
-Some APIs is not stable right now, and here's also a full list about how to get upgraded from [Vuesax](https://vuesax.com) to Vuesax Alpha.
+一些API目前还不稳定，这里有一个完整的指南，告诉你如何从[Vuesax](https://vuesax.com)升级到Vuesax Alpha。
 
-You can find the breaking change list here: [Breaking Change List (Updating)](#).
-
----
-
-Vuesax Alpha is open source software licensed as
-[MIT](https://github.com/vuesax-alphax/vuesax-alpha/blob/main/LICENSE).
+你可以在这里找到所有的破坏性改动: [Breaking Change List (Updating)](#).
 
 ---
 
-This project is built based on the [Element Plus :heart: ](https://github.com/element-plus/element-plus) project template.
+Vuesax Alpha 是一个以[MIT](https://github.com/vuesax-alphax/vuesax-alpha/blob/main/LICENSE)为开题协议的软件。
+
+---
+
+这个项目的构建是基于 [Element Plus :heart: ](https://github.com/element-plus/element-plus)项目模板。
