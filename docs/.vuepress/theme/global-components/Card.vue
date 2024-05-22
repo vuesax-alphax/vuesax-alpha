@@ -178,6 +178,9 @@ h1 {
     h2 {
       padding-top: 120px;
     }
+    h3 {
+      padding-top: 50px;
+    }
     p {
       padding: 5px 20px;
       margin: 0px;
