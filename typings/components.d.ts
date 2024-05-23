@@ -7,7 +7,7 @@ declare module '@vue/runtime-core' {
     VsAlert: typeof import('../packages/vuesax-alpha')['VsAlert']
     VsAvatar: typeof import('../packages/vuesax-alpha')['VsAvatar']
     VsAvatarGroup: typeof import('../packages/vuesax-alpha')['VsAvatarGroup']
-    // VsBadge: typeof import('../packages/vuesax-alpha')['VsBadge']
+    VsBadge: typeof import('../packages/vuesax-alpha')['VsBadge']
     VsButton: typeof import('../packages/vuesax-alpha')['VsButton']
     VsButtonGroup: typeof import('../packages/vuesax-alpha')['VsButtonGroup']
     VsCard: typeof import('../packages/vuesax-alpha')['VsCard']

@@ -510,6 +510,22 @@ $avatar: map.merge(
   $avatar
 );
 
+// Badge
+// css3 var in packages/theme-chalk/src/badge.scss
+$badge: () !default;
+$badge: map.merge(
+  (
+    'bg-color': getCssVar(primary),
+    'radius': 10px,
+    'font-size': 12px,
+    'padding': 6px,
+    'size': 18px,
+    'ripple-bezier': cubic-bezier(0, 0, 0.2, 1),
+    'ripple-color': getCssVar(danger),
+  ),
+  $badge
+);
+
 // Button
 // css3 var in packages/theme-chalk/src/button.scss
 $button: () !default;

@@ -127,7 +127,7 @@ If you use volar, please add the global component type definition to compilerOpt
 
 - [x] Alert
 - [x] Avatar
-- [ ] Badge
+- [x] Badge
 - [ ] Breadcrumb
 - [x] Button
 - [x] Card

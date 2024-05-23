@@ -1,5 +1,6 @@
 import { VsAlert } from '@vuesax-alpha/components/alert'
 import { VsAvatar, VsAvatarGroup } from '@vuesax-alpha/components/avatar'
+import { VsBadge } from '@vuesax-alpha/components/badge'
 import { VsButton, VsButtonGroup } from '@vuesax-alpha/components/button'
 import { VsCard, VsCardGroup } from '@vuesax-alpha/components/card'
 import { VsCheckbox, VsCheckboxGroup } from '@vuesax-alpha/components/checkbox'
@@ -42,6 +43,7 @@ export default [
   VsAlert,
   VsAvatar,
   VsAvatarGroup,
+  VsBadge,
   VsButton,
   VsButtonGroup,
   VsCard,
