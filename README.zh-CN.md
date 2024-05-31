@@ -25,7 +25,7 @@
 
 在这个版本 90% 的 api 都能正常使用. 详情参考 [Vuesax 文档](https://vuesax.com/)
 
-你也可以从 npm 上面使用带 `old` tag的 版本
+你也可以从 npm 上面使用带 `old` tag 的 版本
 
 ```sh
 # Choose a package manager you like.
@@ -96,9 +96,9 @@ app.mount('#app')
 
 #### 暗黑模式
 
-想要使用暗黑模式，你可以创建一个开关来切换html的`dark`类。
+想要使用暗黑模式，你可以创建一个开关来切换 html 的`dark`类。
 
-如果你只需要黑色模式，在html上面添加一个dark类就可以了。
+如果你只需要黑色模式，在 html 上面添加一个 dark 类就可以了。
 
 ```html
 <html class="dark">
@@ -109,10 +109,9 @@ app.mount('#app')
 
 如果你想要切换它，我推荐 [useDark | VueUse](https://vueuse.org/core/usedark/).
 
-
 #### Volar 支持
 
-如果你使用Volar，请将全局组件类型定义添加到tsconfig.json中的compilerOptions.types中。
+如果你使用 Volar，请将全局组件类型定义添加到 tsconfig.json 中的 compilerOptions.types 中。
 
 ```json
 // tsconfig.json
@@ -166,7 +165,7 @@ app.mount('#app')
 
 ## 不兼容变化
 
-一些API目前还不稳定，这里有一个完整的指南，告诉你如何从[Vuesax](https://vuesax.com)升级到Vuesax Alpha。
+一些 API 目前还不稳定，这里有一个完整的指南，告诉你如何从[Vuesax](https://vuesax.com)升级到 Vuesax Alpha。
 
 你可以在这里找到所有的不兼容变化: [Breaking Change List (Updating)](#).
 

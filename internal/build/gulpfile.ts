@@ -52,6 +52,7 @@ export default series(
     runTask('buildFullBundle'),
     runTask('generateTypesDefinitions'),
     runTask('buildHelper'),
+    runTask('buildExtensionHelper'),
     series(
       withTaskName('buildThemeChalk', () =>
         run('pnpm run -C packages/theme-chalk build')

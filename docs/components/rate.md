@@ -257,8 +257,6 @@ EXPOSES:
     link: null
     code: null
     usage: ''
-UPDATES:
-  - type
 ---
 
 # Rate
