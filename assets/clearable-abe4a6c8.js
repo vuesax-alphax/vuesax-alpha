@@ -1,0 +1,1 @@
+import{e as t,f as s,r as n,o as r,c,a as _,_ as u}from"./app-bcbed475.js";const m={class:"center"},p=t({__name:"clearable",setup(d){const e=s(3);return(f,a)=>{const o=n("vs-rate");return r(),c("div",m,[_(o,{modelValue:e.value,"onUpdate:modelValue":a[0]||(a[0]=l=>e.value=l),clearable:""},null,8,["modelValue"])])}}}),i=u(p,[["__file","clearable.vue"]]);export{i as default};
