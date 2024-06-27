@@ -19,7 +19,7 @@ export const sortData = <T = Record<any, unknown>>(
   sortKey: keyof T,
   type: 'desc' | 'asc' = 'desc'
 ) => {
-  const _sortKey = toLower(String(sortKey))
+  const _sortKey = String(sortKey)
   let sortType: string | undefined = type
   const ns = useNamespace('table')
   const el: HTMLElement | null = event.target as HTMLElement | null
