@@ -1,4 +1,3 @@
-import { toLower } from 'lodash-unified'
 import { useNamespace } from '@vuesax-alpha/hooks'
 /**
  *
