@@ -3,6 +3,7 @@ import { UPDATE_MODEL_EVENT } from '@vuesax-alpha/constants'
 import {
   buildProps,
   definePropType,
+  isArray,
   isBoolean,
   isNumber,
   isString,
@@ -132,7 +133,7 @@ export const checkboxProps = buildProps({
 
 export const checkboxEmits = {
   [UPDATE_MODEL_EVENT]: (val: CheckboxModelType) =>
-    isString(val) || isNumber(val) || isBoolean(val),
+    isString(val) || isNumber(val) || isBoolean(val) || isArray(val),
   change: (val: CheckboxModelType) =>
     isString(val) || isNumber(val) || isBoolean(val),
 }
