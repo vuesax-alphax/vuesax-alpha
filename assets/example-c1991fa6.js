@@ -1,0 +1,1 @@
+import{_ as s,r as e,o as t,c as _,a as o,w as a}from"./app-59e97983.js";const r={},i={class:"center"};function m(l,p){const c=e("vs-icon-home"),n=e("vs-icon");return t(),_("div",i,[o(n,{size:"30"},{default:a(()=>[o(c)]),_:1})])}const d=s(r,[["render",m],["__file","example.vue"]]);export{d as default};
