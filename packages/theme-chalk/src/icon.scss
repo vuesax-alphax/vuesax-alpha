@@ -24,7 +24,7 @@
 }
 
 @include b(icon) {
-  --color: inherit;
+  --vs-color: inherit;
   height: 1em;
   width: 1em;
   line-height: 1em;
@@ -33,7 +33,7 @@
   align-items: center;
   position: relative;
   fill: currentColor;
-  color: var(--color);
+  color: rgba(var(--vs-color));
   font-size: inherit;
 
   @include when(loading) {
