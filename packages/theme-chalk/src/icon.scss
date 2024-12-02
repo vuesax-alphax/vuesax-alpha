@@ -98,6 +98,8 @@
       stroke-dasharray: 0, 24.19;
       stroke-dashoffset: 0;
       visibility: hidden;
+      transition: stroke-dasharray 0.2s ease-in-out,
+        visibility 0.02s 0.18s;
     }
   }
   @include when(active) {
