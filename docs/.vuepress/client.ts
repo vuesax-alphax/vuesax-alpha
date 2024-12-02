@@ -4,15 +4,11 @@ import Vuesax from 'vuesax-alpha'
 import 'vuesax-alpha/theme-chalk/index.css'
 import 'vuesax-alpha/theme-chalk/dark/css-vars.css'
 
-import { inject } from '@vercel/analytics'
 import * as VuesaxIconsVue from '@vuesax-alpha/icons-vue'
 
 export default defineClientConfig({
   enhance({ app }) {
-    inject()
-
-    // @ts-ignore
-    // dumb fix for my computer
+    // @ts-expect-error
     app.use(Vuesax)
 
     for (const [key, component] of Object.entries(VuesaxIconsVue)) {
